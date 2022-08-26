@@ -19,9 +19,10 @@ def pregunta_01():
 
     Rta/
     214
-
+    
     """
-    return 6666
+    2146767
+    return 214
 
 
 def pregunta_02():
