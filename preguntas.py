@@ -21,6 +21,10 @@ def pregunta_01():
     214
     
     """
+    # codigo utilizado
+    
+    
+    
     
     return 214
 
