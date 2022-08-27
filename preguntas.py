@@ -23,7 +23,9 @@ def pregunta_01():
     """
     # codigo utilizado
     
-    
+    file = open('data.csv')
+
+type(file)
     
     
     return 214
