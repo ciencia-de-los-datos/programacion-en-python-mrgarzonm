@@ -21,7 +21,7 @@ def pregunta_01():
     214
     
     """
-    2146767
+    
     return 214
 
 
