@@ -23,10 +23,10 @@ def pregunta_01():
     """
     # codigo utilizado
     
-    file = open('data.csv')
-
-type(file)
-    
+    file = open('data.csv','r')
+    data_csv = file.readlines()
+    print(data_csv)
+    print("hola mundo")
     
     return 214
 
