@@ -46,6 +46,19 @@ def pregunta_02():
     ]
 
     """
+    
+    from collections import Counter
+    with open( 'data.csv' , "r") as file:
+        data = file.readlines()
+        
+    data = [row.replace("\n", "") for row in data]
+    data = [row.replace("\t", ",") for row in data]
+    data = [row.split(",") for row in data]
+    data = [row[0] for row in data]
+    d1 = Counter(data)
+    respuesta = list(d1.items())
+    respuesta.sort(reverse = False) 
+    
     return
 
 
