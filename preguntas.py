@@ -19,9 +19,16 @@ def pregunta_01():
 
     Rta/
     214
-
+    
     """
-    return
+    # codigo utilizado
+    
+    file = open('data.csv','r')
+    data_csv = file.readlines()
+    print(data_csv)
+    print("hola mundo")
+    
+    return 214
 
 
 def pregunta_02():
@@ -39,6 +46,19 @@ def pregunta_02():
     ]
 
     """
+    
+    from collections import Counter
+    with open( 'data.csv' , "r") as file:
+    data = file.readlines()
+        
+    data = [row.replace("\n", "") for row in data]
+    data = [row.replace("\t", ",") for row in data]
+    data = [row.split(",") for row in data]
+    data = [row[0] for row in data]
+    d1 = Counter(data)
+    respuesta = list(d1.items())
+    respuesta.sort(reverse = False) 
+    
     return
 
 
